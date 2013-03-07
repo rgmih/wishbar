@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="base">
+	<tal:block metal:fill-slot="content">
+		<h1>Бар желаний ИТРИУМ</h1>
+		<p>
+			Вход только по приглашениям!
+		</p>
+        <div id="form" style="margin-top: 10px; width: 100%;">
+        	<form name="login-form" method="post" action="/login/" method="POST" style="line-height: 20px; display: table-cell; width: 100%;">
+        		Введите
+	        	<input name="username" value="" placeholder="имя" type="text"></input> и
+	        	<a class="awesome green" onclick="document['login-form'].submit();">войдите!</a>
+	        </form>
+        </div>
+	</tal:block>
+</html>
+

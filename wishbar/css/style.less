@@ -1,0 +1,155 @@
+* {
+	margin: 0; padding: 0;
+}
+
+html,body {
+	width: 100%;
+	font: 14px/18px 'HelveticaNeue-Light','Helvetica Neue',Arial,Helvetica,sans-serif;
+	background: #ddd;
+}
+
+#content-wrapper {
+	width: 500px;
+	margin: 0 auto;
+	padding: 50px 50px 20px;
+	// background: url("/img/highlight.png") no-repeat scroll 50% 0 transparent;
+}
+
+#content {
+	width: 500px;
+	background-color: white;
+	border-radius: 15px;
+	padding: 15px;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+	
+}
+
+#footer {
+	width: 500px;
+	margin: 15px;
+	font-size: small;
+	color: gray;
+	text-align: center;
+}
+
+#login-form > *{
+	vertical-align: middle; 
+}
+
+h1 {
+	margin: 10px 0 15px 0;
+}
+
+div.table {
+	display: table;
+	border-spacing: 0px 5px;
+	margin-top: 5px;
+}
+div.table > label {
+	display: table-row;
+}
+div.table > label > div {
+	display: table-cell;
+	vertical-align: top;
+	
+	&:nth-child(2) {
+		padding-left: 5px;
+	}
+}
+
+.checkbox {
+	display: block;
+	width: 33px;
+	height: 32px;
+	background: url("/img/checkbox.png") center top no-repeat;
+}
+.checkbox.checked {
+	background: url("/img/checkbox-checked.png") center top no-repeat;
+}
+input[type="checkbox"] {
+	position: absolute;
+	left: -9999px;
+}
+
+input[type="text"], textarea {
+	border-radius: 3px;
+	padding: 2px 5px 4px 5px;	
+	border: 1px solid #AAA; 
+	box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    outline: none;
+}
+input[type="text"] {
+	width: 230px;
+}
+
+.title {
+	height: 30px;
+	line-height: 30px;
+	margin-top: 2px;
+	font-size: 20pt;
+}
+
+.description {
+	font-size: small;
+	color: gray;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	resize: none;
+	overflow: auto;
+}
+
+.button-panel {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.logout, .logout:visited {
+	color: gray;
+	text-decoration: none;
+	border-bottom: 1px dotted gray;
+}
+.logout:hover {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 1px dotted #444;
+}
+
+.awesome, .awesome:visited {
+	background: #222 url(alert-overlay.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	border-radius: 5px; 
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+	.awesome:hover							{ background-color: #111; color: #fff; }
+	.awesome:active							{ top: 1px; }
+	.small.awesome, .small.awesome:visited 			{ font-size: 11px; padding: ; }
+	.awesome, .awesome:visited,
+	.medium.awesome, .medium.awesome:visited 		{ font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
+	.large.awesome, .large.awesome:visited 			{ font-size: 14px; padding: 8px 14px 9px; }
+	
+	.green.awesome, .green.awesome:visited		{ background-color: #91bd09; }
+	.green.awesome:hover						{ background-color: #749a02; }
+	.blue.awesome, .blue.awesome:visited		{ background-color: #2daebf; }
+	.blue.awesome:hover							{ background-color: #007d9a; }
+	.red.awesome, .red.awesome:visited			{ background-color: #e33100; }
+	.red.awesome:hover							{ background-color: #872300; }
+	.magenta.awesome, .magenta.awesome:visited		{ background-color: #a9014b; }
+	.magenta.awesome:hover							{ background-color: #630030; }
+	.orange.awesome, .orange.awesome:visited		{ background-color: #ff5c00; }
+	.orange.awesome:hover							{ background-color: #d45500; }
+	.yellow.awesome, .yellow.awesome:visited		{ background-color: #ffb515; }
+	.yellow.awesome:hover							{ background-color: #fc9200; }

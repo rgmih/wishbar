@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="base">
+	<tal:block metal:fill-slot="content">
+		<h1>Желания исполняются...</h1>
+		<p>
+			Спасибо, ваш заказ — ${order.wishstr} — 
+			<tal:block condition="not order.bequick">в процессе обработки.</tal:block>
+			<tal:block condition="order.bequick">уже обрабатывается, спешим-спешим.</tal:block>
+			<tal:block condition="order.donothing">Ах, постойте, он уже выполнен :)</tal:block>
+			<tal:block condition="not order.donothing"> Желание будет исполнено в течение 5-10 минут.</tal:block>
+		</p>
+		<div class="button-panel">
+			<a href="/" class="large green awesome">Еще раз?</a>
+		</div>
+	</tal:block>
+</html>
+

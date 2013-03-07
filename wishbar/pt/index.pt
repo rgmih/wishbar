@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="base">
+    <tal:block metal:fill-slot="head">
+    	<script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+    </tal:block> 
+	<tal:block metal:fill-slot="content">
+		<h1>
+			Дорогая ${username}!
+		</h1>
+		<p>
+			Чего ты хочешь сейчас?
+		</p>
+		<form id="bar" action="/" method="POST">
+			<div class="table">
+			<tal:block repeat="wish wishbar">
+				<label for="${wish.name}">
+					<div><input id="${wish.name}" name="wish-${wish.name}" type="checkbox"></input><div class="checkbox"></div></div>
+					<div>
+						<div class="title">${wish.title}</div>
+						<div class="description">${wish.description}</div>
+					</div>
+				</label>
+			</tal:block>
+			</div>
+			<p>
+				Особые пожелания:
+			</p>
+			<textarea name="special"></textarea>
+			<input id="bequick" name="bequick" value="false" type="hidden"></input>
+			<div class="button-panel">
+				<a id="submit" class="large green awesome">Заказать</a>
+				<a id="submit-now" class="large green awesome">Хочу немедленно!</a>
+			</div>
+		</form>
+	</tal:block>
+	<tal:block metal:fill-slot="footer">
+    	<span>Вы не ${username}? Нажмите <a href="/logout/" class="logout">здесь</a>.</span><br />
+
+    </tal:block> 
+</html>
+

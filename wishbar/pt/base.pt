@@ -1,0 +1,30 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"	
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width">
+        
+        <title>wishbar</title>
+        <link rel="stylesheet/less" href="/css/style.less" type="text/css" charset="utf-8" />
+        
+        <tal:block metal:define-slot="head">
+        </tal:block>
+        
+        <script src="/js/less.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+    	<div id="content-wrapper">
+    		<div id="content">
+		        <tal:block metal:define-slot="content">
+		        </tal:block>
+	        </div>
+	        <div id="footer">
+		        <tal:block metal:define-slot="footer">
+		        </tal:block>
+		        <span><a href="https://github.com/rgmih/wishbar">Бар исполнения желаний</a>, 2013</span>
+	        </div>
+        </div>
+    </body>
+</html>
