@@ -13,7 +13,7 @@ requires = [
     ]
 
 setup(name='wishbar',
-      version='0.0',
+      version='0.1',
       description='wishbar',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
@@ -22,9 +22,9 @@ setup(name='wishbar',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
-      author='',
+      author='rgmih',
       author_email='',
-      url='',
+      url='https://github.com/rgmih/wishbar',
       keywords='web pyramid pylons',
       packages=find_packages(),
       include_package_data=True,
